@@ -1,14 +1,20 @@
 @@charset "UTF-8";
+header {
+	position: relative;
+	height: 50vh;
+  background: url(resume.png) center / cover;
+}
+
 head{
-  background-color: inherit;
+  background-color: #eaf6fd;
 }
 body{
-  background-color: #e6f0f0;
+  background-color: #eaf6fd;
 }
 
 h1{
-  background-color: #97cdf3;
+  background-color: #bde3f7;
 }
 h2{
-  background-color: #97cdf3;
+  background-color: #bde3f7;
 }
