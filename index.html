@@ -2,20 +2,31 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>職務経歴書・ポートフォリオ</title>
+   <title>職務経歴書・ポートフォリオ</title>
     <meta name="description" content="ポートフォリオサイト">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <header>
-      <img src="resume.png" alt="職務経歴">
+    <header class="page-header wrapper">
+      <p class="resizeimage">
+        <img src="resume.png" alt="職務経歴">
+      </p>
     </header>
-    <main>
-    <h2>やりたいこと</h2>
-      <p>現在フルリモートでエンジニア採用と経理補助をお手伝いさせていただいています。<br>事務経験が長く、プログラマーとしての経験はないためエンジニアのお手伝いができるIT事務の仕事に興味があります！<br>特にフルリモートで働ける案件ございましたらご連絡いただけますと幸いです。</p>
-    <h2>職務経験</h2>
-    <h3>総合事務職　平成２２年〜平成３０年（臨時職員）</h3>
+
+  <main>
+    <ul id="page-link">
+      <li><a href="#area-1">やりたいこと</a></li>
+      <li><a href="#area-2">職務経験</a></li>
+      <li><a href="#area-3">画像をリサイズするプログラム</a></li>
+    </ul>
+    <section id="area-1">
+      <h2>やりたいこと</h2>
+        <p>現在フルリモートでエンジニア採用と経理補助をお手伝いさせていただいています。<br>事務経験が長く、プログラマーとしての経験はないためエンジニアのお手伝いができるIT事務の仕事に興味があります！<br>特にフルリモートで働ける案件ございましたらご連絡いただけますと幸いです。</p>
+    </section>
+    <section id="area-2">
+      <h2>職務経験</h2>
+        <h3>総合事務職　平成２２年〜平成３０年（臨時職員）</h3>
       <ul>
         <li>電話応対、来客応対</li>
         <li>書類作成、社内報作成（Word, Excel）</li>
@@ -49,7 +60,9 @@
         <li>データの洗い出し（Excel Vlook UP）</li>
         <li>Kintoneのデータ登録、更新</li>
       </ul>
-    </main>
+    </section>
+  
+  <section id="area-3">
     <h2>画像をリサイズするプログラム</h2>
     <pre>
       <code>
@@ -83,3 +96,10 @@
           img.save(dst + os.path.basename(f))
         </code>
       </pre>
+    </section>
+  </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--自作のJS-->
+<script src="move.js"></script>
+</body>
+</html>
