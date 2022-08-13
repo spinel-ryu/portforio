@@ -6,15 +6,15 @@
   padding: 0 4%;
 }
 
-.page-link {
-  display: flex;
+.page-link1 li { 
+  list-style: none;
+  display: inline;
+  padding: 30px;
   font-size: 1.25rem;
   text-transform: 34px;
   list-style: none;
 }
-.page-link li{
-  margin-left: 36px;
-}
+
 .page-link a {
   color: #bde3f7;
 }
@@ -31,9 +31,15 @@
   width: 100%;
 }
 
+p {
+  line-height: 1.7;
+  text-align:  justify;
+}
+
 head{
   background-color: #eaf6fd;
 }
+
 body{
   background-color: #eaf6fd;
 }

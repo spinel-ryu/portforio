@@ -15,11 +15,14 @@
     </header>
 
   <main>
-    <ul id="page-link">
+    
+    <ul class="page-link1">
       <li><a href="#area-1">やりたいこと</a></li>
       <li><a href="#area-2">職務経験</a></li>
       <li><a href="#area-3">画像をリサイズするプログラム</a></li>
+      <li><a href="#area-4">メールフォーム</a></li>
     </ul>
+  
     <section id="area-1">
       <h2>やりたいこと</h2>
         <p>現在フルリモートでエンジニア採用と経理補助をお手伝いさせていただいています。<br>事務経験が長く、プログラマーとしての経験はないためエンジニアのお手伝いができるIT事務の仕事に興味があります！<br>特にフルリモートで働ける案件ございましたらご連絡いただけますと幸いです。</p>
@@ -97,6 +100,17 @@
         </code>
       </pre>
     </section>
+    <section id="area-4">
+      <h2>メールフォーム</h2>
+      <form action="mail.php" method="post" name="contact-form">
+        <p>お名前<br>
+          <input type="text" placeholder="名前"></p>
+        <p>メールアドレス<br>
+          <input type="email"></p>
+        <p>メッセージ<br>
+          <textarea name="message" placeholder="メッセージを入力"></textarea></p>
+        <p><input type="submit" value="送信"></p>
+      </form>
   </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!--自作のJS-->
