@@ -11,8 +11,6 @@
   display: inline;
   padding: 30px;
   font-size: 1.25rem;
-  text-transform: 34px;
-  list-style: none;
 }
 
 .page-link a {
@@ -33,20 +31,20 @@
 
 p {
   line-height: 1.7;
-  text-align:  justify;
+  text-align: justify;
 }
 
-head{
+.page-head {
   background-color: #eaf6fd;
 }
 
-body{
+.page-body {
   background-color: #eaf6fd;
 }
 
-h1{
+.heading1 {
   background-color: #bde3f7;
 }
-h2{
+.heading2 {
   background-color: #bde3f7;
 }
