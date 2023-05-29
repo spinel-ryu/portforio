@@ -1,35 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-   <title>職務経歴書・ポートフォリオ</title>
-    <meta name="description" content="ポートフォリオサイト">
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>職務経歴書・ポートフォリオ</title>
+  <meta name="description" content="ポートフォリオサイト">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
-    <header class="page-header wrapper">
-      <p class="resizeimage">
-        <img src="resume.png" alt="職務経歴">
-      </p>
-    </header>
+<body>
+  <header class="page-header wrapper">
+    <p class="resizeimage">
+      <img src="resume.png" alt="職務経歴">
+    </p>
+  </header>
 
   <main>
-    
+
     <ul class="page-link1">
       <li><a href="#area-1">やりたいこと</a></li>
       <li><a href="#area-2">職務経験</a></li>
       <li><a href="#area-3">画像をリサイズするプログラム</a></li>
       <li><a href="#area-4">メールフォーム</a></li>
     </ul>
-  
+
     <section id="area-1">
       <h2>やりたいこと</h2>
-        <p>現在フルリモートでエンジニア採用と経理補助をお手伝いさせていただいています。<br>事務経験が長く、プログラマーとしての経験はないためエンジニアのお手伝いができるIT事務の仕事に興味があります！<br>特にフルリモートで働ける案件ございましたらご連絡いただけますと幸いです。</p>
+      <p>現在フルリモートでエンジニア採用と経理補助をお手伝いさせていただいています。<br>事務経験が長く、プログラマーとしての経験はないためエンジニアのお手伝いができるIT事務の仕事に興味があります！<br>特にフルリモートで働ける案件ございましたらご連絡いただけますと幸いです。</p>
     </section>
+
     <section id="area-2">
       <h2>職務経験</h2>
-        <h3>総合事務職　平成２２年〜平成３０年（臨時職員）</h3>
+      <h3>総合事務職　平成２２年〜平成３０年（臨時職員）</h3>
       <ul>
         <li>電話応対、来客応対</li>
         <li>書類作成、社内報作成（Word, Excel）</li>
@@ -40,7 +41,7 @@
         <li>受付・予約・顧客対応</li>
       </ul>
 
-    <h3>サービスエンジニア　平成３０年〜令和２年（正社員）</h3>
+      <h3>サービスエンジニア　平成３０年〜令和２年（正社員）</h3>
       <ul>
         <li>病院へ自社システムの導入、バージョンアップ作業</li>
         <li>モニター、端末の設置</li>
@@ -54,7 +55,7 @@
         <li>医療機器と自社システムの接続、連携テスト</li>
       </ul>
 
-    <h3>人事・経理補助　令和２年〜(業務委託)</h3>
+      <h3>人事・経理補助　令和２年〜(業務委託)</h3>
       <ul>
         <li>求めている人材を選定（Wantedly、LAPRASなど）</li>
         <li>スカウト送付、返信あった方との面談調整</li>
@@ -64,56 +65,65 @@
         <li>Kintoneのデータ登録、更新</li>
       </ul>
     </section>
-  
-  <section id="area-3">
-    <h2>画像をリサイズするプログラム</h2>
-    <pre>
-      <code>
-        //画像をリサイズ
-        import os
-        import glob
-        from PIL import Image
 
-        src = glob.glob('/Users/**/Documents/photo/*.jpg') // オリジナル画像のパスと拡張子を設定 *をファイル名にすれば一枚だけ変換
-        dst = '/Users/**/Documents/resize_after/' // リサイズ画像の保存フォルダ
+    <section id="area-3">
+      <h2>画像をリサイズするプログラム</h2>
+      <pre>
+        <code>
+          // 画像をリサイズ
+          import os
+          import glob
+          from PIL import Image
 
-        width = 300 //リサイズ後の横幅
+          src = glob.glob('/Users/**/Documents/photo/*.jpg'); // オリジナル画像のパスと拡張子を設定 *をファイル名にすれば一枚だけ変換
+          dst = '/Users/**/Documents/resize_after/'; // リサイズ画像の保存フォルダ
 
-        for f in src:
-          img = Image.open(f)
-          original_width, original_height = img.size
-          scale = width / original_width
-          height = int(original_height * scale)
-          img = img.resize((width,height))
-          img.save(dst + os.path.basename(f))
+          width = 300; // リサイズ後の横幅
 
-        height = 300 //リサイズ後の縦幅
+          for f in src {
+            img = Image.open(f);
+            original_width, original_height = img.size;
+            scale = width / original_width;
+            height = int(original_height * scale);
+            img = img.resize((width,height));
+            img.save(dst + os.path.basename(f));
+          }
 
-        for f in src:
+          height = 300; // リサイズ後の縦幅
 
-          img = Image.open(f)
-          original_width, original_height = img.size
-          scale = height / original_height
-          width = int(original_width * scale)
-          img = img.resize((width,height))
-          img.save(dst + os.path.basename(f))
+          for f in src {
+            img = Image.open(f);
+            original_width, original_height = img.size;
+            scale = height / original_height;
+            width = int(original_width * scale);
+            img = img.resize((width,height));
+            img.save(dst + os.path.basename(f));
+          }
         </code>
       </pre>
     </section>
+
     <section id="area-4">
       <h2>メールフォーム</h2>
-      <form action="mail.php" method="post" name="contact-form">
-        <p>お名前<br>
-          <input type="text" placeholder="名前"></p>
-        <p>メールアドレス<br>
-          <input type="email"></p>
-        <p>メッセージ<br>
-          <textarea name="message" placeholder="メッセージを入力"></textarea></p>
-        <p><input type="submit" value="送信"></p>
+      <p>メールフォームのコードはこちら</p>
+      <!-- メールフォームのHTMLコード -->
+      <form action="send_email.php" method="post">
+        <label for="name">お名前:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">メールアドレス:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">お問い合わせ内容:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <input type="submit" value="送信">
       </form>
+    </section>
   </main>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<!--自作のJS-->
-<script src="move.js"></script>
+
+  <footer>
+    <p>© 2023 職務経歴書・ポートフォリオ</p>
+  </footer>
 </body>
 </html>
